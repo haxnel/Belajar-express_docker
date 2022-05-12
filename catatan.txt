@@ -1,0 +1,9 @@
+    Dari informasi yg saya dapatkan direkomendasikan untuk tidak menggunakan npm command dengan container karna
+perbedaan layer antara si node dan container mrnjadikan mereka membutuhkan waktu yang lama untuk production. (pemahaman saya)
+
+**
+Jalankan terlebh dahulu docker-compose biasa kemudian baru jalankan yang dev maupun prod
+
+**
+Pada bagian Dockerfile di RUN if harus diberikan space didalam bracket
+    contoh: RUN if [ "..." ]
